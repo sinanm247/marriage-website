@@ -37,7 +37,7 @@
   position: relative;      /* anchor for the absolute corners */
 
   /* full-screen height on mobile so it feels like a landing card */
-  min-height: 100vh;
+  min-height: 80vh;
   height: auto;
 
   @media (min-width: 768px) {
@@ -291,7 +291,7 @@
   font-size: 10px;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--gold-soft);
+  color: var(--gold);
 }
 
 /* Animated chevron arrow */
@@ -299,8 +299,8 @@
   display: block;
   width: 14px;
   height: 14px;
-  border-right: 1.5px solid var(--gold-soft);
-  border-bottom: 1.5px solid var(--gold-soft);
+  border-right: 1.5px solid var(--gold);
+  border-bottom: 1.5px solid var(--gold);
   transform: rotate(45deg);
   animation: scrollBounce 1.6s ease-in-out infinite;
 }
