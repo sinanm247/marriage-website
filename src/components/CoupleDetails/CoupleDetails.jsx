@@ -11,7 +11,7 @@ function CoupleDetails() {
         <div className="couples__header">
           <img src={flowerLineSage} className="couples__strip" alt="" aria-hidden="true" />
           <p className="section-kicker couples__kicker">Together With Our Families</p>
-          <h2 className="couples__title serif">Two Hearts, Two Journeys</h2>
+          <h2 className="couples__title serif">Two Hearts Joined in Love</h2>
         </div>
 
         <div className="couples__grid">

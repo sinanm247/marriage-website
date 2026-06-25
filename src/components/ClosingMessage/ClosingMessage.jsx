@@ -1,12 +1,13 @@
 import './ClosingMessage.scss'
 import lineColorFlower from '../../assets/Vectors/line-vector-color-flower.png'
 import cornerOutlineSage from '../../assets/Vectors/corner-otline-sage.png'
+import cornerOutlineGold from '../../assets/Vectors/corner-otline-gold.png'
 
 function ClosingMessage() {
   return (
     <section className="closing">
       <img src={cornerOutlineSage} className="closing__corner closing__corner--tl" alt="" aria-hidden="true" />
-      <img src={cornerOutlineSage} className="closing__corner closing__corner--br" alt="" aria-hidden="true" />
+      <img src={cornerOutlineGold} className="closing__corner closing__corner--br" alt="" aria-hidden="true" />
       <div className="closing__inner">
         <img src={lineColorFlower} className="vec-divider closing__divider" alt="" aria-hidden="true" />
         <p className="closing__arabic arabic">

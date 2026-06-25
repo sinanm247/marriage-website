@@ -268,3 +268,49 @@
     height: 700px;
   }
 }
+
+/* ── Scroll hint — bottom-center of the text card ── */
+.hero__scroll-hint {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  animation: hintFadeIn 1s ease 1.8s both;
+
+  @media (min-width: 1024px) {
+    bottom: 2.5rem;
+  }
+}
+
+.hero__scroll-label {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold-soft);
+}
+
+/* Animated chevron arrow */
+.hero__scroll-arrow {
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-right: 1.5px solid var(--gold-soft);
+  border-bottom: 1.5px solid var(--gold-soft);
+  transform: rotate(45deg);
+  animation: scrollBounce 1.6s ease-in-out infinite;
+}
+
+@keyframes scrollBounce {
+  0%, 100% { transform: rotate(45deg) translateY(0);    opacity: 0.5; }
+  50%       { transform: rotate(45deg) translateY(5px);  opacity: 1;   }
+}
+
+@keyframes hintFadeIn {
+  from { opacity: 0; transform: translateX(-50%) translateY(8px); }
+  to   { opacity: 1; transform: translateX(-50%) translateY(0); }
+}

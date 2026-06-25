@@ -50,7 +50,7 @@ $card-bg: #f7f2e9;
 .couples__grid {
   display: grid;
   gap: 1rem;
-  align-items: start;     /* cards can be different heights */
+  align-items: start;
 
   @media (min-width: 480px) {
     gap: 1.5rem;
@@ -94,6 +94,15 @@ $card-bg: #f7f2e9;
 /* Landscape card — used for both cards now */
 .couples__card--landscape {
   height: 360px;  /* compact on very small screens */
+
+  /* Pull second card up by 30px on mobile to tighten the gap */
+  &:nth-child(2) {
+    margin-top: -50px;
+
+    @media (min-width: 768px) {
+      margin-top: 0;
+    }
+  }
 
   @media (min-width: 380px) {
     height: 400px;

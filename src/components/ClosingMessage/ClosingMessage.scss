@@ -45,6 +45,10 @@
   // margin-bottom: 2.25rem;
   width: 250px;
   opacity: 0.92;
+
+  @media (max-width: 450px) {
+    width: 200px;
+  }
 }
 
 .closing__message {

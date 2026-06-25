@@ -44,6 +44,12 @@ function Hero() {
           <div className="fade-up delay-4 hero__ornament-wrap">
             <img src={line1Gold} className="hero__ornament-img" alt="" aria-hidden="true" />
           </div>
+
+          {/* ── Scroll indicator — bottom-center of text card ── */}
+          <div className="hero__scroll-hint" aria-hidden="true">
+            <span className="hero__scroll-label">Scroll</span>
+            <span className="hero__scroll-arrow" />
+          </div>
         </div>
 
         {/* ── Right: Image ── */}

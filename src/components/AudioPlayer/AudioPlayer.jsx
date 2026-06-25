@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import { Play, Pause } from 'lucide-react'
+import { Music, VolumeX } from 'lucide-react'
 import audioSrc from '../../assets/Audio/Jiyaa-Song.mp3'
 import './AudioPlayer.scss'
 
@@ -58,11 +58,11 @@ function AudioPlayer() {
       <button
         className={`audio-btn${isPlaying ? ' audio-btn--playing' : ''}`}
         onClick={toggle}
-        aria-label={isPlaying ? 'Pause music' : 'Play music'}
+        aria-label={isPlaying ? 'Music playing — click to pause' : 'Music paused — click to play'}
         title={isPlaying ? 'Pause music' : 'Play music'}
       >
         <span className="audio-btn__icon">
-          {isPlaying ? <Pause size={16} strokeWidth={2} /> : <Play size={16} strokeWidth={2} />}
+          {isPlaying ? <Music size={16} strokeWidth={2} /> : <VolumeX size={16} strokeWidth={2} />}
         </span>
         <span className="audio-btn__ripple" />
       </button>
